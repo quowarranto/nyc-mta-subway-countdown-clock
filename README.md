@@ -15,7 +15,11 @@ Sign-up for an API key at: [https://api.mta.info/#/signup](https://api.mta.info/
 Place your key in /MTA_Times/mta_api_key.txt.
 
 # Running the Script
-The script requires you to provide both a Stop ID and a direction. For example: ruby nyc-mta-subway-countdown-clock.rb R01 S.
+The script requires you to provide both a Stop ID and a direction. 
+
+For example: 
+
+    ruby nyc-mta-subway-countdown-clock.rb R01 S
 
 * A list of Stop IDs is available at: [https://atisdata.s3.amazonaws.com/Station/Stations.csv](https://atisdata.s3.amazonaws.com/Station/Stations.csv). 
 * Directions are either "N" or "S".
