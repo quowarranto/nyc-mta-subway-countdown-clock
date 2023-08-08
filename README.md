@@ -1,5 +1,5 @@
 # New York City MTA Subway Countdown Clock
-This is a Ruby script for the NYC MTA subway system that can: (1) display the next arriving train in a given direction at a given station; and (2) display the the minutes until the next train arrives on a Raspberry Pi SenseHat.
+This is a Ruby script for the NYC MTA subway system that can: (1) display the next arriving train in a given direction for a given station; and (2) display the the minutes until the next train arrives on a Raspberry Pi SenseHat.
 
 The program uses the following structure:
 
