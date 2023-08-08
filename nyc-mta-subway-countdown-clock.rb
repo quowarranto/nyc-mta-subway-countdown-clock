@@ -339,8 +339,6 @@ def SenseTimes()
         $sense.low_light = true
     end
 
-    (`ping -c 1 www.google.com` == "") ? (SenseStart(); $sense.show_letter("X", text_colour=@red); exit(1)) : nil
-
     if !Time.now.hour.between?(2, 5)
         ConsolidatedTimes()
         SenseStart()
