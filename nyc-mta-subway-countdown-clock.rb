@@ -3,7 +3,7 @@ require 'google/transit/gtfs-realtime.pb'
 require 'httparty'
 
 # Retrieve or store MTA API key
-if File.exists?("#{File.dirname(__FILE__)+"/MTA_Times/mta_api_key.txt"}")
+if File.exist?("#{File.dirname(__FILE__)+"/MTA_Times/mta_api_key.txt"}")
     $mta_api_key = File.open("#{File.dirname(__FILE__)+"/MTA_Times/mta_api_key.txt"}", "r") { |i| i.read }
 else
     Dir.exist?("#{File.dirname(__FILE__)+"/MTA_Times"}") ? nil : Dir.mkdir("#{File.dirname(__FILE__)+"/MTA_Times"}")
