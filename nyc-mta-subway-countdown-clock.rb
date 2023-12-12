@@ -336,7 +336,6 @@ def SenseTimes()
     def SenseStart
         $sense.clear
         $sense.set_rotation(90)
-        $sense.low_light = true
     end
 
     if !Time.now.hour.between?(2, 5)
