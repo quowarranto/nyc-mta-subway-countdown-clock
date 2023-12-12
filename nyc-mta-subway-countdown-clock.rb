@@ -43,7 +43,7 @@ end
 
 def FindStop(stop_id, direction)
     # Determine whether local station already exists
-    if File.exists?("#{File.dirname(__FILE__)+"/MTA_Times/mta_local_station.json"}")
+    if File.exist?("#{File.dirname(__FILE__)+"/MTA_Times/mta_local_station.json"}")
         LoadLocalStation()
         if (ARGV.empty?) || (ARGV[0][0] == "-") || ($stop_id == stop_id && $direction == direction)
             return
